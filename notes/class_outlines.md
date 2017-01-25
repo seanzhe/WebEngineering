@@ -111,8 +111,6 @@
   * http://www.usability.gov/how-to-and-tools/methods/wireframing.html
 * Today: implement the data model using SQL
 * Recall one of the key aspects of relational databases: standardization
-* Choice for today......
-* Joke: http://howfuckedismydatabase.com/
 * But do you really have to know SQL?
 * Most major web frameworks use the big idea known as Object Relational Mapping (ORM)
   * Definition: technique that connects the objects of an application to tables in a relational database management system.
