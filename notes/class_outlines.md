@@ -112,9 +112,64 @@
 * Today: implement the data model using SQL
 * Recall one of the key aspects of relational databases: standardization
 * But do you really have to know SQL?
+
+#Tuesday, January 31st: Web Frameworks
+* Last class: Schema => SQL, Rails
 * Most major web frameworks use the big idea known as Object Relational Mapping (ORM)
   * Definition: technique that connects the objects of an application to tables in a relational database management system.
   * The properties and relationships of the objects in an application can be easily stored and retrieved from a database _without writing SQL statements directly_ and with less overall database access code
   * Example: Active Record in Rails (http://guides.rubyonrails.org/active_record_basics.html)
   * Different frameworks use different configurations and conventions
   * Behind-the-scene, it is all SQL...
+* That Was Then...
+  * The LAMP stack: Linux + Apache + MySQL (database) + PHP (language)
+  * The good: still alive and viable, well-known, more control
+  * The bad and the ugly: administration, language design, reinvent-the-wheel constantly, enables writing really bad and insecure code
+  * Vent on why PHP sucks: http://blog.codinghorror.com/the-php-singularity/
+* This is now...
+  * Use a framework to streamline the development; makes developing web applications easier by making assumptions about what every developer needs to get started; write less code; don't reinvent the wheel; did I say do things quickly and efficiently?
+  * Carefully choose a database system. No longer one-size-fits-all.
+  * If there is something that you need, download a package (or library) for the framework using a package manager (which performs installing, upgrading, configuring, and removing packages)
+  * Start up the integrated server on the web app
+  * Refer to the web framework API documentation
+  * You will do more configuration than coding
+* A Web Framework:
+  * "loosly, any HTTP server implementation upon which you could build a web application—a full-stack framework, a micro-framework, or even a web platform such as Rack, Servlet, or plain PHP."
+* What all modern web frameworks should have:
+  * Good documentation
+  * Self-contained server
+  * Package management system
+  * Provides a framework for unit testing
+  * Single location for database connection settings (e.g., host, username, password)
+  * Database migrations and rollbacks
+  * Handles URL routing
+  * Single / multiple queries
+  * JSON serialization
+  * Too many features fundamental tasks to list...  
+* The structure of a modern web application framework
+  * Example: a Ruby on Rails web app; recall scaffolding from last class
+* The benefits and costs of scaffolding
+* The benefits and costs of web frameworks
+* Benchmarks: https://www.techempower.com/benchmarks/#section=intro&hw=ph&test=query 
+
+#Tuesday, February 7th: Web Services, REST
+* Leg 2
+* First things first, learn Ruby first
+* What web applications really are: a collection of resources with CRUD operations (Create, Read, Update, Delete)
+* The idea of a web service in English: "a function that can be accessed by _other programs_ (read: non-human) over the web (e.g., via HTTP)" https://stackoverflow.com/questions/226108/what-is-a-web-service-in-plain-english
+* WSDL and SOAP => "heavyweight" web service protocols; XML-based
+* REST => Describes resources (URLs) on which we can perform actions
+* A design pattern for web applications not only resources but also standard HTTP verbs
+* Recall COMP 20, servers communicate with clients using stateless connections. Also, recall some of the HTTP verbs: {POST, GET, DELETE, PUT}
+* Example 1: to fetch a list of articles, which one of the HTTP commands do you use?
+  - Answer: GET. So the URL /articles will issue a GET request. To fetch a particular article, /articles/3
+* Example 2: to add an article, which one of the HTTP commands do you use?
+  - Answer: POST. BUT, using the same path as above
+* REST Principles
+  - Give every "thing" (i.e., resource) an ID
+  - Link things together
+  - Use HTTP standard methods
+  - Resources with multiple representations (e.g., XML, JSON)
+  - Communicate statelessly
+* So what does REST have to do with CRUD? A lot: each HTTP interaction should specify, on its own, a CRUD operation and which object to do it on
+* The other importance of REST and CRUD: literature.  See GitHub API.
