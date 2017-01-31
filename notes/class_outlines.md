@@ -114,6 +114,8 @@
 * But do you really have to know SQL?
 
 #Tuesday, January 31st: Web Frameworks
+* #fail, engineering notebook
+* Lottery for presentations on Thursday
 * Last class: Schema => SQL, Rails
 * Most major web frameworks use the big idea known as Object Relational Mapping (ORM)
   * Definition: technique that connects the objects of an application to tables in a relational database management system.
@@ -154,7 +156,6 @@
 
 #Tuesday, February 7th: Web Services, REST
 * Leg 2
-* First things first, learn Ruby first
 * What web applications really are: a collection of resources with CRUD operations (Create, Read, Update, Delete)
 * The idea of a web service in English: "a function that can be accessed by _other programs_ (read: non-human) over the web (e.g., via HTTP)" https://stackoverflow.com/questions/226108/what-is-a-web-service-in-plain-english
 * WSDL and SOAP => "heavyweight" web service protocols; XML-based
