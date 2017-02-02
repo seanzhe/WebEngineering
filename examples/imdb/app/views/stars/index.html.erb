@@ -8,7 +8,6 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Created at</th>
-      <th>Updated at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +18,6 @@
         <td><%= star.first_name %></td>
         <td><%= star.last_name %></td>
         <td><%= star.created_at %></td>
-        <td><%= star.updated_at %></td>
         <td><%= link_to 'Show', star %></td>
         <td><%= link_to 'Edit', edit_star_path(star) %></td>
         <td><%= link_to 'Destroy', star, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -17,7 +17,7 @@ class StarsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create star" do
     assert_difference('Star.count') do
-      post stars_url, params: { star: { created_at: @star.created_at, first_name: @star.first_name, last_name: @star.last_name, updated_at: @star.updated_at } }
+      post stars_url, params: { star: { created_at: @star.created_at, first_name: @star.first_name, last_name: @star.last_name } }
     end
 
     assert_redirected_to star_url(Star.last)
@@ -34,7 +34,7 @@ class StarsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update star" do
-    patch star_url(@star), params: { star: { created_at: @star.created_at, first_name: @star.first_name, last_name: @star.last_name, updated_at: @star.updated_at } }
+    patch star_url(@star), params: { star: { created_at: @star.created_at, first_name: @star.first_name, last_name: @star.last_name } }
     assert_redirected_to star_url(@star)
   end
 
