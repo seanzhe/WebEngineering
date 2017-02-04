@@ -113,7 +113,7 @@
 * Recall one of the key aspects of relational databases: standardization
 * But do you really have to know SQL?
 
-#Tuesday, January 31st: Web Frameworks
+#Tuesday, January 31st: Web Frameworks, Development Environment
 * #fail, engineering notebook
 * Lottery for presentations on Thursday
 * Last class: Schema => SQL, Rails
@@ -152,10 +152,12 @@
   * Example: a Ruby on Rails web app; recall scaffolding from last class
 * The benefits and costs of scaffolding
 * The benefits and costs of web frameworks
-* Benchmarks: https://www.techempower.com/benchmarks/#section=intro&hw=ph&test=query 
+* Benchmarks: https://www.techempower.com/benchmarks/#section=intro&hw=ph&test=query
+* Isolated development environments
+  * Ruby: use `rvm` and Gemsets https://rvm.io/gemsets/basics
+  * Python: use `virtualenv` https://virtualenv.pypa.io/en/stable/
 
-#Tuesday, February 7th: Web Services, REST
-* Leg 2
+#Tuesday, February 7th: Web Services, Representational State Transfer (REST)
 * What web applications really are: a collection of resources with CRUD operations (Create, Read, Update, Delete)
 * The idea of a web service in English: "a function that can be accessed by _other programs_ (read: non-human) over the web (e.g., via HTTP)" https://stackoverflow.com/questions/226108/what-is-a-web-service-in-plain-english
 * WSDL and SOAP => "heavyweight" web service protocols; XML-based
