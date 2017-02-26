@@ -176,3 +176,24 @@
   - Communicate statelessly
 * So what does REST have to do with CRUD? A lot: each HTTP interaction should specify, on its own, a CRUD operation and which object to do it on
 * The other importance of REST and CRUD: literature.  See GitHub API.
+
+#Tuesday, February 28th: Static Content Optimization
+* Leg 3 presentations: 3, 6, 13, 14
+* So far, I'm seeing this course is going slowly
+  - Engineering notebook, virtual environments, decision-making => getting the ducks-in-the-row
+  - We have barely touched web engineering side of things
+* Last week: a major security incident affecting Cloudflare and numerous websites: https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug
+  - Why is this important for this class?
+  - What is Cloudflare?
+  - Vocabulary in incident report...
+* In leg 3, there's a requirement: "Your team is required to make the MVP "pretty."  That is, use a number of (e.g., more than 1) JavaScript files and stylesheets."
+  - Understanding *why* this requirement: the topic of today
+* Scenario I used to give on final exam for this class: "Congratulations, you've made it!  Your website has received much publicity.  The number of unique users per day spiked from 100 to 50000 within a week.  Unfortunately, you are also on your way to watch your server melt thanks to the new load.  Like your predecessors, you are also using WordPress.  Unlike your predecessors, you only have $3000.00 put aside in the warchest to spend on your website.  Assuming that you have full control of your server, including making modifications to configuration files, list some of the tests and improvements that you can make to improve the performance of your website so it does not go kablooey!"
+* Static content: perhaps even more important than dynamic content
+* The big ideas
+  - Minification of content
+  - Expiry
+  - Caching
+  - Use CDN
+  - Measure
+* Example workflow in JavaScript using Grunt
