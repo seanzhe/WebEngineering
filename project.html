@@ -153,29 +153,71 @@ comp20-s2017-team1
 </ol>
 
 <h3>Presentation</h3>
-<p>In class on Thursday, March 2nd, 4 teams will present their MVP to the class. Each selected team will have 5 minutes to show their MVP and 5 minutes for questions and answers from the class.</p>
+<p>In class on Tuesday, March 7th, 4 teams will present their MVP to the class. Each selected team will have 5 minutes to show their MVP and 5 minutes for questions and answers from the class.</p>
 <hr/>
 
-<h2 id="leg4">Leg 4: Production, Unit Testing, and Code Review</h2>
+<h2 id="leg4">Leg 4: Production, Unit Testing, Code Review, and Static Content Optimizations</h2>
 
 <h3>Overview</h3>
-<p>Imagine: your product could receive as many as 15,000 unique visits per day once it is in production.  Your team is about to go there.</p>
+<p>Imagine: your product could receive as many as 15,000 unique visits per day once it is in production.  Your team is about to go there.  It is time to "go live" --deploy your Minimum Viable Product (MVP) to production.  The world of production is very different than development or testing environments as production is very unforgiving. There was a recent article: <a href="https://blog.skyliner.io/you-cant-have-a-rollback-button-83e914f420d9#.kkuwy4kr3" target="_blank">"You can’t have a rollback button.  The Internet is a big truck. It’s really hard to drive it backwards."</a></p>
 
-<h3>Instructions</h3>
-<p>It is time to "go live" --deploy your Minimum Viable Product (MVP) to production.  Your team is free to deploy the MVP however you want, including using hosting services such as Digital Ocean, Linode, Amazon Web Services (AWS), Heroku, or a combination of many hosting or cloud services.  You shall no longer user localhost for demonstrations; localhost shall only be used for development purposes.</p>
-
-<p>Your team must also learn and utilize a unit testing framework(s) and provide tests for the MVP.  The scope of the tests shall be limited to only to the models, controllers, and views.</p>
-
-<h3>Submission</h3>
-<p>Make sure tests are provided in the source code repository (generally in a folder named <code>test</code>).</p>
-<p>For this leg and week, your team shall make at least two entries in your engineering blog:</p>
+<h3>Deliverables</h3>
+<p>For this leg and for the next two weeks, your team shall make at least three entries in your engineering blog:</p>
 <ol>
 	<li>In one post, announce the live URL of your team's MVP and explain why your team chose the test framework(s) that are being used.</li>
-	<li>In another post, your team shall review the source code of another team's project.  The team will be randomly assigned to you.  NOTE: please provide constructive comments. Destructive and uninformative comments will be not be tolerated. Your job is to make other team's apps better.</li>
+	<li>In a second post, your team shall review the source code of another team's project.  The team will be randomly assigned to you --see below.  NOTE: please provide constructive comments. Destructive and uninformative comments will be not be tolerated. Your job is to make other team's apps better.</li>
+	<li>In a third post, <span class="stress">prove</span> to everyone that the performance of your product has vastly improved compared to what you originally wrote (or hacked).  Specifically, you must answer the following questions:
+		<ol>
+			<li>What optimization techniques did you use?</li>
+			<li>What tools did you use to test the performance of your product before and after optimizations made? Using no tools for this leg is not acceptable!  More below.</li>
+			<li>What performance aspects have been improved (e.g., loading time, file size)?  Please provide numbers, percentages, or letter grades.</li>
+			<li>Are there any lingering potential performance issues?</li>
+		</ol>
+	</li>
 </ol>
 
-<h3>Presentation</h3>
-<p>In class on Thursday, March 9th, 4 selected teams will present their live MVP and unit tests to the class. A selected team will have 7 minutes to explain their test cases (and also teach the students a little about the test framework used), and 7 minutes for code review from the class.</p>
+<h3>Code Review Lottery</h3>
+<p>Each team has been randomly assigned another team's source code to review.  Each team has been given <em>read</em> access to each team's repository on GitHub.</p>
+<ol>
+	<li>Team 1 shall review Team 8's source code</li>
+	<li>Team 2 shall review Team 13's source code</li>
+	<li>Team 3 shall review Team 5's source code</li>
+	<li>Team 4 shall review Team 1's source code</li>
+	<li>Team 5 shall review Team 14's source code</li>
+	<li>Team 6 shall review Team 2's source code</li>
+	<li>Team 7 shall review Team 9's source code</li>
+	<li>Team 8 shall review Team 12's source code</li>
+	<li>Team 9 shall review Team 6's source code</li>
+	<li>Team 10 shall review Team 7's source code</li>
+	<li>Team 12 shall review Team 3's source code</li>
+	<li>Team 13 shall review Team 4's source code</li>
+	<li>Team 14 shall review Team 10's source code</li>
+</ol>
+
+<h3>Instructions</h3>
+<p>Your team is free to deploy the MVP however you want, including using hosting services such as Digital Ocean, Linode, Amazon Web Services (AWS), Heroku, or a combination of many hosting or cloud services.  You shall no longer user localhost for demonstrations; localhost shall only be used for development purposes.</p>
+
+<p>Your team must also learn and utilize a unit testing framework(s) and provide tests for the MVP.  The scope of the tests shall be limited to only to the models, controllers, and views.  Make sure tests are provided in the source code repository (generally in a folder named <code>test</code>).</p>
+
+<p>Your team must make as many optimizations to your existing web application as possible to your product using the techniques that we have discussed.  At the very least, your team must use at least four (4) techniques to optimize your product:</p>
+<ul>
+	<li>HTML5 application cache</li>
+	<li>A content delivery network (CDN)</li>
+	<li>JavaScript and CSS minification</li>
+	<li>Combining JavaScript files, CSS files</li>
+	<li>Expiry</li>
+	<li>JavaScript at bottom of pages</li>
+</ul>
+
+<h3>Performance Tools</h3>
+<p>There is a plethora of tools that you can use to measure the performance of your product before and after optimizations made:</p>
+<ul>
+	<li><a href="https://developer.chrome.com/devtools#audits" target="_blank">Audits in Google Developer Tools</a></li>
+	<li><a href="https://developers.google.com/speed/pagespeed/" target="_blank">PageSpeed Tools</a></li>
+	<li><a href="http://yslow.org/" target="_blank">YSlow</a></li>
+	<li><a href="https://jmeter.apache.org/" target="_blank">JMeter</a></li>
+	<li><a href="https://loader.io/" target="_blank">loader.io</a></li>
+</ul>
 
 <h3>Code Review References</h3>
 <ul>
@@ -185,13 +227,14 @@ comp20-s2017-team1
 <li><a href="http://fabiensanglard.net/prince_of_persia/index.php" target="_blank">Price of Persia Code Review (Fabien Sanglard sets the standard for writing amazing code reviews)</a></li>
 </ul>
 
+<h3>Presentation</h3>
+<p>In class on Thursday, March 16th, 4 teams will be chosen at random to present their implementation to the class. Selected teams will have 5 minutes to explain their plan, concerns, and findings to the class, and 5 minutes for questions and answers from the class.</p>
 <hr/>
 
-<h2 id="leg5">Leg 5: Static Content Optimizations</h2>
-<h2 id="leg6">Leg 6: The Technical Writing Seminar</h2>
+<h2 id="leg6">Leg 5: The Technical Writing Seminar</h2>
+<h2 id="leg8">Leg 6: Revisiting a fundamental concept covered in COMP 40</h2>
 <h2 id="leg7">Leg 7: The Bounty</h2>
-<h2 id="leg8">Leg 8: Revisiting a fundamental concept covered in COMP 40</h2>
-<h2 id="leg9">Leg 9: Final Project</h2>
+<h2 id="leg9">Leg 8: Final Project</h2>
 
 <h2 id="teams">Teams</h2>
 <p>Team 1 (Presented Leg 1)</p>
