@@ -197,3 +197,42 @@
   - Use CDN
   - Measure
 * Example workflow in JavaScript using Grunt
+
+#Thursday, March 9th: Dynamic Content Optimization and Distributed Memory Caching Systems
+* #whatcouldpossiblygowrong with web applications, what do we have to worry about?
+  - when there are LOTS of database transactions? (which is common)
+  - what's a faster option?
+* The K + 1 problem
+  - Extra queries
+  - Code review
+  - Examples: http://www.sitepoint.com/silver-bullet-n1-problem/, http://guides.rubyonrails.org/active_record_querying.html
+  - Solution: Eager loading
+* Traditional caching architectures
+  - k-v hash table
+  - client-server model
+  - "short term memory"
+  - Distributed
+  - Takes advantage of available RAM
+  - "Dumb" servers
+  - NOT persistent
+  - NOT application specific
+  - NOT highly available
+  - If you have taken COMP 40, what about reliability?
+* Memcached
+  - 250 byte key size
+  - 1 MB value limit
+  - LRU: least recently used accessed items are cycled out, not MRU
+  - Objects are serialized
+  - Client hashes key to server
+  - Volatile
+  - Commands
+    - set, add, replace => reads
+    - get, gets, delete => writes
+* Redis
+  - Part of the NoSQL family (like MongoDB)
+  - Similar set of simple commands as memcached
+  - Persistence to disk
+  - Values up to 512 MB in size
+* Example: my MBTA web application and API
+* For Your Interest
+  - Facebook has 2 orders of magnitude more reads than writes!
