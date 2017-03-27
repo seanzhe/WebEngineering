@@ -236,3 +236,26 @@
 * Example: my MBTA web application and API
 * For Your Interest
   - Facebook has 2 orders of magnitude more reads than writes!
+
+#Tuesday, March 28th: Scaling
+* How can your web application support n users where n is really large?
+* How can one divide the load of supporting a web application among multiple CPUs and disk drives?
+* The "one-machine" problem
+* Definition: Scaling horizontally (or scaling out): add servers
+* Definition: Scaling up: adding power to an existing box
+* Readings
+
+#TBD: Session Management
+* Recall: HTTP => stateless
+* How do you maintain state? Recall basic web programming...
+* What are their problems?
+* Why do you need to maintain state? Maintain connection between client and server (think dialog)
+* A topic I no longer talk about in COMP 20
+* Session => establish variables; generally used in views
+* Each session is given a unique ID bound to the user
+* What are the properties of a good session ID?
+* Session data is generally stored on server typically as text files
+* Session cookie with session ID on client-side but if cookies are turned-off, the ID is part of URL
+* How long does a session last?
+* #whatcouldpossiblygowrong with storing data on the server as text files?
+* Using database-backed sessions? In Rails, it is known as ActiveRecord Session Store
