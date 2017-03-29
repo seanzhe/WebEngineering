@@ -231,10 +231,41 @@ comp20-s2017-team1
 <p>In class on Thursday, March 16th, 4 teams will be chosen at random to present their implementation to the class. Selected teams will have 5 minutes to explain their plan, concerns, and findings to the class, and 5 minutes for questions and answers from the class.</p>
 <hr/>
 
-<h2 id="leg6">Leg 5: The Technical Writing Seminar</h2>
-<h2 id="leg8">Leg 6: Revisiting a fundamental concept covered in COMP 40</h2>
-<h2 id="leg7">Leg 7: The Bounty</h2>
-<h2 id="leg9">Leg 8: Final Project</h2>
+<h2 id="leg5">Leg 5: The Technical Writing Seminar and Memory Caching</h2>
+
+<h3>Overview</h3>
+<p>In this leg, your team will write a public Application Program Interface (API) for your product.  Your team is also expected to use memory caching in some capacity.</p>
+
+<!-- Thanks Tyler -->
+<h3>Requirements</h3>
+<ol>
+<li>A RESTful endpoint that allows for all possible modifications to your project. If a user can both create new content and edit old ones, you should have at least one endpoint to enable these.</li>
+<li>A RESTful endpoint that allows for user creation. This may mean that it's finally time to add users to your application.</li>
+<li>Documentation for <span class="stress">everything</span>. This is the most important part of this. I, or any other team, should be able to use your team's API without looking at how you implemented it. Be sure to specify any headers that are necessary to use.</li>
+<li>Specify a plan for which endpoints will need authentication and authorization, and what kinds. <span class="note">You should NOT implement this yet. Again, do NOT implement this yet</span>.</li>
+<li>Feel free to use API builders such as Grape (Ruby) or Sandman (Python) but you will need to understand how they architect the API and why they do it the way they do. The purpose of this assignment is that you understand RESTful interfaces.</li>
+</ol>
+<p>A big part of the assessment will be the thoroughness of the API and documentation. When you're done, you should be able to transition your project to rely entirely on this API and not have any full page reloads (though you should NOT do this transition yet). Consider security -- should I be able to POST to every endpoint? Should certain users only receive certain resources when they do a GET call?</p>
+<p>Anything have to do with user permissions should be carefully considered but not to be implemented. You will do authorization and authentication in a later leg.</p>
+
+<h3>Submission</h3>
+<ol>
+<li>Please make your API and documentation publicly availably on your web application.  It can be a link at the footer of the home page or on each page.</li>
+<li>An engineering describing all of the choices you made in implementing the API. Did you end up using an API generator? Why? Why didn't you? What did you memory caching for? Did memory caching improve performance?  There are no right answers, but there should be a thought process.</li>
+</ol>
+
+<h3>Presentation</h3>
+<p>In class on Thursday, April 6th, 4 teams will be chosen at random to present their implementation to the class. A selected team will have 5 minutes to demonstrate API and documentation to the class, and 5 minutes for questions and answers from the class.</p>
+
+<h3>References</h3>
+<ul>
+	<li><a href="https://msdn.microsoft.com/en-us/magazine/gg309172.aspx" target="_blank"><span class="title">A Coder’s Guide to Writing API Documentation</span> (MSDN)</a></li>
+	<li><a href="https://stackoverflow.com/questions/6500468/recommendations-for-writing-an-api" target="_blank">https://stackoverflow.com/questions/6500468/recommendations-for-writing-an-api</a></li>
+</ul>
+
+<!--<h2 id="leg8">Leg 6: Revisiting a fundamental concept covered in COMP 40</h2>
+<h2 id="leg6">Leg 6: The Bounty</h2>
+<h2 id="leg7">Leg 7: Final Project</h2>-->
 
 <h2 id="teams">Teams</h2>
 <p>Team 1 (Presented Leg 1)</p>
