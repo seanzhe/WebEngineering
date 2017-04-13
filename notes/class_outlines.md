@@ -245,17 +245,51 @@
 * Definition: Scaling up: adding power to an existing box
 * Readings
 
-#TBD: Session Management
-* Recall: HTTP => stateless
-* How do you maintain state? Recall basic web programming...
-* What are their problems?
-* Why do you need to maintain state? Maintain connection between client and server (think dialog)
-* A topic I no longer talk about in COMP 20
-* Session => establish variables; generally used in views
-* Each session is given a unique ID bound to the user
-* What are the properties of a good session ID?
-* Session data is generally stored on server typically as text files
-* Session cookie with session ID on client-side but if cookies are turned-off, the ID is part of URL
-* How long does a session last?
-* #whatcouldpossiblygowrong with storing data on the server as text files?
-* Using database-backed sessions? In Rails, it is known as ActiveRecord Session Store
+#Thursday, April 13: Final Thoughts
+##Outcomes
+* Writing
+* Performance and tradeoffs
+* Never do something from scratch
+* Coding vs engineering
+* Design from an engineering perspective
+* Challenges with subprojects, components
+* Model-View-Controller
+* Other services (Heroku, AWS) --their values but up to a point.........
+* How to implement a project
+* On-boarding costs (e.g., with one-click deployments)
+* Knowing what your clients want
+* Documentation and communicating your design choices
+* Technology will change
+* Technology will not change (i.e., legacy code)
+* Ideas and concepts will not change
+* People may not change
+* The ability to dig into the frameworks
+* Explain decisions, choices (e.g., when deciding a framework)
+
+##Clear the Air, Improvements in the Future
+* Do optimizations near the end
+* Knowing some of the pieces beforehand for preparation
+* More discussion on best practices
+* Pick own framework
+* Flexibility on project scope
+* Do something applicable to Tufts
+* Really ugly code......
+* "I didn't care about the project" --passion (x2)
+* Relate to 20
+* Time to meet
+* Post schedule
+* Ask for preference: front end or back end
+* Learning from the other teams
+* Post on Piazza stack
+* Have options for project
+* Be more careful with presentations (a team presented two weeks in a row)
+* Engineering blog
+* "Check-off boxes" --extra credit
+* "Didn't implement something we wanted to do"
+* Talks on Rails
+* Hack up demos with frameworks --choose.
+* Discussion of frameworks
+* Open source project (for future classes)
+* Development methods, how groups works (e.g., stand-up meetings), group Git workflows
+* Linux sys admin
+* Make presentations more status based
