@@ -1,297 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
-<link rel="stylesheet" href="stylesheets/style.css" />
-<title>COMP 120: Web Engineering</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="stylesheets/style.css" />
+	<title>COMP 120: Web Programming and Engineering</title>
 </head>
 
 <body>
-<h1>COMP 120: Web Engineering</h1>
-<h2>Tufts University Department of Computer Science, Spring 2017</h2>
+	<h1>COMP 120: Web Programming and Engineering</h1>
+	<h2>Tufts University Department of Computer Science, Summer Session A ONLINE</h2>
 
-<h2>Course Description</h2>
-<p>Web applications are complex systems that deliver a plethora of features to a large number of users (including developers), and also exhibit unique behaviors and demands in terms of performance, scalability, usability, and security.  This course will discuss the limits of current web technologies, information and service architectures, caching, session and data management.</p>
-
-<h2>Instructor</h2>
-<ul>
-<li>Ming Chow, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a></li>
-<li>Office Hours: Wednesdays from 1 - 4 PM, or by appointment, on the second floor of Halligan Hall by the CS Main Office (hours are good until the last day of classes, April 28th)</li>
-<li>Please send all class questions (e.g., help on assignments and labs) <a href="https://piazza.com/tufts/spring2017/comp120/home" target="_blank">via Piazza</a>. DO NOT E-MAIL ME! Sign up at <a href="https://piazza.com/tufts/spring2017/comp120" target="_blank">https://piazza.com/tufts/spring2017/comp120</a>.</li>
-<li>For emergencies or private matters, please e-mail or see me directly.</li>
-</ul>
-
-<h2>Teaching Assistant</h2>
-<ul>
-<li>Jacob Katsiaficas</li>
-<li>Justin Sullivan</li>
-</ul>
-
-<h2>Class Time</h2>
-<ul>
-<li>Tuesdays and Thursdays, 4:30 - 5:45 PM in Nelson Auditorium</li>
-</ul>
-
-<h2>Textbook</h2>
-<ul>
-<li>None</li>
-</ul>
-
-<h2>Prerequisites</h2>
-<ul>
-<li>COMP 20: Web Programming or permission by instructor</li>
-</ul>
-
-<h2>Assessment</h2>
-<ul>
-<li>Semester Project (50%)</li>
-<li>Engineering Notebook (30%)</li>
-<li>Class participation and subjective factors (20%)</li>
-</ul>
-
-<p>Class participation encompasses a variety of activities, all with the same purpose.  To earn high grades for class participation, you must show that you are actively engaged in managing your own learning, developing new skills, and developing new ways of programming and problem-solving. You can be engaged in a variety of ways:</p>
-<ul>
-<li>Asking appropriate questions in class</li>
-<li>Answering questions when called on in class</li>
-<li>Asking appropriate questions on Piazza</li>
-<li>Answering questions well on Piazza</li>
-<li>Interacting professionally with programming partners and course staff</li>
-<li>Working out ideas with teaching assistants</li>
-<li>Helping other COMP 120 students (or COMP 20 students for that matter) in Halligan</li>
-</ul>
-
-<p>Nobody has to do all of these things; you can earn top grades for class participation by doing just a few things well. In particular, nobody is required to speak in class, but everybody should be prepared to answer questions if called upon.</p>
-
-<p>Professional interactions with other students and with course staff are the same as those which are expected in any workplace. It is also professional for you to recognize that a member of the course staff may be present but not actually available to talk about COMP 120.</p>
-
-<h2 id="notebook">What is the Engineering Notebook and Why For This Class?</h2>
-<p>This semester, I am requiring each team to maintain a engineering notebook.  This engineering notebook shall be in electronic format and be made online, one notebook per team.  The notebook can be in form of a blog (e.g., Tumblr, GitHub, WordPress), thus an engineering blog --social media (e.g., via Twitter, Facebook, Snapchat) is not acceptable.  Many professional engineers and engineering teams maintain notebooks for good reasons:</p>
-
-<ul>
-	<li>To keep a running record of activities</li>
-	<li>To record ideas</li>
-	<li>To be used as a legal document for patent activities and even in litigation</li>
-	<li>To record what work was done or not done in case a person leaves a project</li>
-	<li>To highlight successes</li>
-	<li><em>To highlight failures and what should be done the next time</em></li>
-	<li>To list upcoming plans and challenges</li>
-</ul>
-
-<p>On top of these reasons, I want:</p>
-<ul>
-	<li>To make the engineering notebooks available to other teams so other teams can learn from your work</li>
-	<li>To make you continue to develop your writing skills</li>
-</ul>
-
-<p>You may argue that a Git commit history serves the same purpose.  However, Git commit history is largely for the source code.  This course is much more than just writing code.  Example: you will be drawing and communicating visuals.</p>
-
-<p>At least one entry in your engineering notebook is required each week, starting on the week Leg 1 is due.  At the very least, your team will need to highlight the wins and fails of the week, and plans for the upcoming weeks.  The requirement for each entry in engineering notebook: a timestamp of entry.  Back-dating is not acceptable.</p>
-
-<h2>Course Policies</h2>
-<ol>
-	<li>Because each leg of the semester project is team-based, no extensions will be granted.</li>
-	<li>Because this class will have a number of guest speakers and student presentations, laptops or mobile devices are not allowed to be used in class unless specified.  Phones must be silent.  You are allowed to politely step outside of the class to take phone calls (e.g., for emergencies, job offers).</li>
-	<li>While you are allowed to use third-party APIs, packages, or libraries for development, I will not help you with any questions or issues that you have with them.</li>
-	<li>If you sabotage another team's work or presentation, your team will receive an F in the course.</li>
-</ol>
-
-<h2 id="syllabus">Syllabus</h2>
-
-<p class="note">Schedule is subject to change.</p>
-
-<p>Topics:</p>
-<ul>
-<li>APIs</li>
-<li>Application Security</li>
-<li>Dynamic Content Optimization and Distributed Memory Caching Systems</li>
-<li>Scalability</li>
-<li>Session Management</li>
-<li>Authentication and Authorization</li>
-<li>Mobile</li>
-</ul>
-
-<table>
-<tr>
-<th>Date</th>
-<th>Agenda</th>
-<th>Deliverables</th>
-</tr>
-<tr>
-<td>Thursday, January 19</td>
-<td>
+	<h2>Course Description</h2>
+	<p>Web applications as complex systems that deliver a plethora of functionality to a large number of users, and
+		exhibit unique behaviors and demands in terms of performance, scalability, usability, and security. How the web
+		works, limitations of client-side and server-side technologies including frameworks and APIs, content
+		optimization, and data persistence and storage. Projects will involve search, using the cloud infrastructure,
+		location-based services, mobile web development, and using tools to assess the security and privacy of web
+		applications.</p>
+	<h2>Instructor</h2>
 	<ul>
-		<li><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#thursday-january-19th-course-introduction">Course Introduction</a></li>
-		<li><a href="project.html">The Semester Project</a></li>
-		<li>Reading: <a href="http://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/" target="_blank">Programmers: Stop Calling Yourselves Engineers</a>
-		<li>Reading: <a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances" target="_blank">What Powers Instagram: Hundreds of Instances, Dozens of Technologies</a></li>
+		<li>Ming Chow, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a></li>
 	</ul>
-</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdsZm1llUsKSKOKLPgp9CIdDFg1fvrc9JlmH_HiAn4YbWIZvQ/viewform" target="_blank">Course Roster <span class="note">PLEASE COMPLETE ASAP!</span></a></td>
-</tr>
-<tr>
-<td>Tuesday, January 24th</td>
-<td>
+
+	<h2>Prerequisites</h2>
 	<ul>
-		<li><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#tuesday-january-24th-model-view-controller-data-modeling">Model-View-Controller; Data Modeling</a></li>
-		<li>Reading: <a href="http://blog.codinghorror.com/understanding-model-view-controller/" target="_blank">Understanding Model-View-Controller (Coding Horror)</a></li>
+		<li>COMP 15 or Data Structures equivalent course.</li>
 	</ul>
-</td>
-<td><a href="project.html#leg1">Leg 1 Assigned, Due Thursday, February 2nd: Your Job Is Not to Write Code</a></td>
-</tr>
-<tr>
-<td>Thursday, January 26th</td>
-<td>
+
+	<h2>Assessment</h2>
 	<ul>
-		<li><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#tuesday-january-24th-sql-object-relational-model-orm">Data Modeling (continued); SQL; Object-Relational Mapping (ORM)</a></li>
-		<li>Reference: <a href="http://sqlzoo.net/wiki/Main_Page" target="_blank">SQLZoo</a></li>
-		<li>Reading: <a href="https://dev.evernote.com/doc/articles/data_structure.php" target="_blank">Evernote's Data Model</a></li>
-		<li>Reading: <a href="https://blog.evernote.com/tech/2012/02/23/whysql/" target="_blank">Evernote --Why SQL?</a></li>
+		<li><a href="#labs">Labs (65%)</a></li>
+		<li>Quizzes (30%; there will be three). Quizzes are available on <a href="https://canvas.tufts.edu"
+				target="_blank">Tufts Canvas</a>.</li>
+		<li>Subjective factors including asking appropriate questions, answering questions well, organizing study
+			groups, posting good readings related to the course, etc. (5%)</li>
 	</ul>
-</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, January 31st</td>
-<td><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#tuesday-january-31st-web-frameworks-development-environment">Web Frameworks, Development Environment</a></td>
-<td>Tufts Engineering Student-Alumni Networking Night, Alumnae Lounge, 6 - 8:30 PM.  RSVP: <a href="https://eventrsvp.tufts.edu/profile/form/index.cfm?PKformID=0x26658215a">https://eventrsvp.tufts.edu/profile/form/index.cfm?PKformID=0x26658215a</a></td>
-</tr>
-<tr>
-<td>Thursday, February 2nd</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></td>
-<td><a href="project.html#leg2">Leg 2 Assigned, Due Thursday, February 9th: Exploring Your Options</a></td>
-</tr>
-<tr>
-<td>Tuesday, February 7th</td>
-<td><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#tuesday-february-7th-web-services-representational-state-transfer-rest">Web Services, Representational State Transfer (REST)</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, February 9th</td>
-<td>NO CLASS, SNOW DAY</td>
-<td>
+
+	<h2 id="syllabus">Syllabus</h2>
+	<h3>Week 1: The Fundamentals</h3>
+	<p>By the end of this week, you will learn how the web works, use the developer tools in a web browser to see HTTP
+		request and response headers and data, and use Git and GitHub.</p>
 	<ul>
-		<li>Tufts Spring 2017 Career Fair, Friday, February 10th, Gantcher Center, 11:30 AM - 2:30 PM</li>
-		<li>Reverse Career Fair (directly after the Career Fair), Halligan 102, 3 - 4 PM.  RSVP: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpkfWUFZIbk9t-7ymwXxSRkaQVXJQXa2QhECDpcMN5sk_mdA/viewform">https://docs.google.com/forms/d/e/1FAIpQLSfpkfWUFZIbk9t-7ymwXxSRkaQVXJQXa2QhECDpcMN5sk_mdA/viewform</a></li>
+		<li>What is the Internet?</li>
+		<li>What is the Web and the HyperText Transfer Protocol (HTTP)</li>
+		<li>Revision control with Git</li>
 	</ul>
-</td>
-</tr>
-<tr>
-<td>Tuesday, February 14th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></td>
-<td><a href="project.html#leg3">Leg 3 Assigned, Due Thursday, March 2nd: Implementing the Minimum Viable Product</a></td>
-</tr>
-<tr>
-<td>Thursday, February 16th</td>
-<td>Guest Speaker: Sean Harrington (Class of 2014), Senior Software Engineer for the New England Patriots</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, February 21st</td>
-<td>Work Day</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, February 28th</td>
-<td><a href="notes/performance_static.html">Static Content Optimization</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, March 2nd</td>
-<td>Work Day</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, March 7th</td>
-<td>
+
+	<h3>Week 2: Developing Front End Content</h3>
+	<p>By the end of this week, you will be able to create a static website with a few pages using HTML and CSS --from
+		scratch, and you will create a web page that responds depending on screen width on a web browser.</p>
 	<ul>
-		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></li>
-		<li>Read: <a href="https://engineering.instagram.com/performance-usage-at-instagram-d2ba0347e442#.ln89hj767" target="_blank">Performance &amp; Usage at Instagram</a></li>
+		<li>HyperText Markup Language (HTML)</li>
+		<li>Cascading Style Sheets (CSS)</a></li>
+		<li>Mobile and responsive content design</li>
 	</ul>
-</td>
-<td>
+
+	<h3>Week 3: The JavaScript Programming Language</h3>
+	<p>By the end of this week, you will learn the JavaScript programming language and the important aspects of the
+		language including data structures, functions, built-in object, and event handling; use JavaScript in an HTML
+		document to manipulate contents on a web page after it is loaded via Document Object Model; create a web page
+		using the Google Maps JavaScript API.</p>
 	<ul>
-		<li><a href="project.html#leg4">Leg 4 Assigned, Due Tuesday, March 14th: Production, Unit Testing, Code Review, and Static Content Optimizations</a></li>
-		<li><a href="final_project.html">Final Project Posted</a></li>
+		<li>Lists</li>
+		<li>Objects</li>
+		<li><a href="https://stackoverflow.com/questions/1470488/what-is-the-function-of-the-var-keyword-and-when-to-use-it-or-omit-it"
+				target="_blank">Variables and variable scoping</a></li>
+		<li>Functions</li>
+		<li>Events</li>
+		<li>Combining JavaScript and HTML: the Document Object Model (DOM)</li>
+		<li>Static Content Performance Optimization</li>
 	</ul>
-</td>
-</tr>
-<tr>
-<td>Thursday, March 9th</td>
-<td><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/notes/class_outlines.md#thursday-march-9th-dynamic-content-optimization-and-distributed-memory-caching-systems">Dynamic Content Optimization and Distributed Memory Caching Systems</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, March 14th</td>
-<td>NO CLASS, SNOW DAY</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, March 16th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, March 28th</td>
-<td>Scalability.  Case studies:
-<ul>
-	<li><a href="notes/ebay2006.pdf">EBay (circa 2006)</a></li>
-	<li><a href="notes/ebay.pdf">EBay</a></li>
-	<li><a href="notes/facebook.pdf">Facebook</a></li>
-	<li><a href="notes/instagram.pdf">Instagram</a></li>
-	<li><a href="notes/reddit.pdf">Reddit</a></li>
-	<li><a href="notes/twitter.pdf">Twitter</a></li>
-	<li><a href="notes/facebook_digg_twitter.pdf">"Why are Facebook, Digg, and Twitter so hard to scale?"</a></li>
-</ul>
-</td>
-<td><a href="project.html#leg5">Leg 5, Due Thursday, April 6th: The Technical Writing Seminar and Memory Caching</a></td>
-</tr>
-<tr>
-<td>Thursday, March 30th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, April 4th</td>
-<td>NO CLASS</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, April 6th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScD8ivzMq3Rb4AfLzcpCVrspphHN-08nB0vzC1HMmloz_N_HQ/viewform">Presentation Evaluation Form</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, April 11th</td>
-<td>SPECIAL</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, April 13th</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, April 18th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScsHmXrNjJnUwKJ9Mx_CMxEyO-mgs8MLp4FcW1QQpVZ_NSQ5Q/viewform" target="_blank">Final Project Presentations, Day 1</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Thursday, April 20th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScsHmXrNjJnUwKJ9Mx_CMxEyO-mgs8MLp4FcW1QQpVZ_NSQ5Q/viewform" target="_blank">Final Project Presentations, Day 2</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Tuesday, April 25th</td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLScsHmXrNjJnUwKJ9Mx_CMxEyO-mgs8MLp4FcW1QQpVZ_NSQ5Q/viewform" target="_blank">Final Project Presentations, Day 3</a></td>
-<td><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4lxPEpIuIUxklv7wwqIpeFasNINNYWM80X1n-MRDZ6SmG0Q/viewform" target="_blank">COMP 120 Spring 2017 360 Degree Performance Review</a></td>
-</tr>
-<tr>
-<td>Thursday, April 27th</td>
-<td>NO CLASS</td>
-<td>&nbsp;</td>
-</tr>
-</table>
+
+	<h3>Week 4: Making Front End Content Interactive and Dynamic</h3>
+	<p>By the end of this week, you will learn how to download data from a remote location and use the data to update a
+		portion of a web page, store a small amounts of data persistently on a web browser, and use a JavaScript
+		front-end framework.</p>
+	<ul>
+		<li>JavaScript Object Notation (JSON)</li>
+		<li>Asynchronous JavaScript and XML (AJAX)</li>
+		<li>Cookies and Local Storage</li>
+		<li>jQuery</li>
+	</ul>
+
+	<h3>Week 5: Developing the Server Side</h3>
+	<p>By the end of this week, you will create a server-side (or back-end) application and deploy it to a cloud
+		infrastructure via Heroku where it can be made publicly accessible.</p>
+	<ul>
+		<li>Node.js: Developing the server side using JavaScript</li>
+		<li>Hosting your web application on Heroku</li>
+		<li>Storing lots of data with PostgreSQL</li>
+		<li>Connecting Node.js web application to a PostgreSQL database</a></li>
+	</ul>
+
+	<h3>Week 6: Web Security</h3>
+	<p>By the end of this week, you will learn the basics of web security including to never trust user input, break a
+		web application, and identify vulnerabilities in a web application.</p>
+	<ul>
+		<li>What is security?</li>
+		<li><a href="https://owasp.org/www-project-top-ten/" target="_blank">The OWASP Top 10</a></li>
+		<li><a href="https://cwe.mitre.org/top25/archive/2019/2019_cwe_top25.html" target="_blank">2019 CWE Top 25 Most
+				Dangerous Software Errors</a></li>
+		<li>Vulnerability: Cross-Site Scripting (#7 on OWASP Top 10)</li>
+		<li>Vulnerability: Injection (#1 on OWASP Top 10)</li>
+	</ul>
+
+	<h2 id="labs">Labs and Workload: All The Labs with Expected Length and Difficulty</h2>
+	<p>Generally speaking, workload is hard to say because the skill-set of the students varies: from those who have
+		just completed Introduction to Computer Science and/or Data Structures to those who already have a Computer
+		Science degree. In terms of number of hours you should expect to spend per week, my rough estimate and
+		expectation is anywhere from 3 to 10 hours of work a week.</p>
+
+	<p>All labs for a given week are due on the following week on a Wednesday at 11:59 PM PDT (so yes, a week-and-a-half
+		to do all labs for a week). The new week will be made available on Monday morning at 10 AM PDT. Late labs are
+		not accepted.</p>
+	<ul>
+		<li>Lab 1 (Week 1): Information Form, Very short (30 minutes)</li>
+		<li>Lab 2 (Week 1): HTTP and Developer Tools, Short (1 hour max) to Medium (2 - 3 hours)</li>
+		<li>Lab 3 (Week 1): Git Introduction, Very short (30 minutes) to Short</li>
+		<li>Lab 4 (Week 2): Your Portfolio, Medium to Long (3+ Hours)</li>
+		<li>Lab 5 (Week 2): Responsive Design, Short to Medium</li>
+		<li>Lab 6 (Week 3): Union Strike Folk Song, Short to Medium</li>
+		<li>Lab 7 (Week 3): Messages Part 1, Short</li>
+		<li>Lab 8 (Week 3): The Ride-Hailing Service Part 1, Medium</li>
+		<li>Lab 9 (Week 4): Messages Part 2, Short</li>
+		<li>Lab 10 (Week 4): The Ride-Hailing Service Part 2, Medium to Long</li>
+		<li>Lab 11 (Week 5): Getting Started with the Server Side using Node.js and Heroku, Short to Medium</li>
+		<li>Lab 12 (Week 5): The Ride-Hailing Service Part 3, Long (3+ hours)</li>
+		<li>Lab 13 (Week 6): Security and Privacy Assessment of Ride-Hailing Service, Medium</li>
+	</ul>
+
+	<h2>Frequently Asked Questions</h2>
+	<h3>Q: Is there a textbook for this course?</h3>
+	<p>A: No</p>
+	<h3>Q: Are there teaching assistants (TAs) for this course?</h3>
+	<p>A: No</p>
+	<h3>Q: This course looks a lot like COMP 20: Web Programming! What gives?</h3>
+	<p>That is correct! This course is now COMP 20: Web Programming with add-ons. Here are the reasons behind the
+		changes:
+		<ol>
+			<li>Too many graduate students have wanted to take COMP 20: Web Programming in the past, and it makes no
+				business sense to not allow graduate students to take the course --hence it has to be a 100 level number
+			</li>
+			<li>COMP 120 will be part of the Tufts Computer Science Online Master's Program</li>
+			<li>I have been wanting to change up COMP 120 anyway</li>
+		</ol>
+	</p>
+	<h3>Q: What are the add-ons in this course, the differences between COMP 120 and COMP 20?</h3>
+	<p>The biggest change is the move from using MongoDB (a "NoSQL" database) to a SQL database, namely PostgreSQL. The
+		reason for this change: it has been very disheartening to see many students graduating without knowing how to
+		use a SQL-based database system. SQL-based database systems are still widely used in the world, and are also
+		important in the data sciences. Static Content Performance Optimization is also added as a topic.</p>
+	<h3>Q: If I have taken COMP 20: Web Programming in the past, can I take this class?</h3>
+	<p>A: No</p>
+	<h3>Q: Is the old COMP 120 website and content still available?</h3>
+	<p>Sure, <a href="spring2017">here you go (from spring 2017 semester)</a>.</p>
+	<h3>Q: Why is there a course website and a course Canvas?</h3>
+	<p>Canvas is used for (1) quizzes, (2) distributing grades and feedback. This website is used (1) to serve a
+		reference for alumni of this, (2) to serve as a reference for employers who are looking to hire students from
+		this course, and (3) for redundancy if Canvas goes down.</p>
+
+	<h2 id="expectations">Expectations and Structure of This Online Course</h2>
+	<p>This course will be a fun one for sure. A few notes on the expectations and structure of this course:</p>
+
+	<h3>1. What this course will NOT have and what I will NOT do:</h3>
+	<ul>
+		<li>Have set office hours.</li>
+		<li>Have synchronous lectures and long video recordings of lectures.</li>
+		<li>Require students to meet online during specific times.</li>
+		<li>Require students to work in teams, a semester group project.</li>
+		<li>Require students to physical meet at the Tufts Medford Campus.</li>
+	</ul>
+	<p>There are many good reasons why I will not do any of the above items:</p>
+	<ul>
+		<li>It's summertime. Many of you have commitments and plans already scheduled.</li>
+		<li>A number of you are working (full-time or internship). That's more important as people need to live, eat.
+		</li>
+		<li>Some students are taking this course abroad. Thus, there are time zone differences.</li>
+	</ul>
+	<p>Adding constraints and extra burden to your lives especially during the summer will not fit well with anyone.
+		Extra constraints and burden also defeat the purpose of an online course. Thus, you will probably not see me at
+		all this summer.</p>
+
+	<h3>2. You are on your own pace.</h3>
+	<p>You can choose to:</p>
+	<ol>
+		<li>Pace yourself during the week</li>
+		<li>Do everything during the weekend</li>
+		<li>Do everything during the last minute</li>
+		<li>Don't do any of the work</li>
+	</ol>
+	<p>Your choice, but the latter three choices are not wise.</p>
+
+	<h3>3. You are responsible for your own learning.</h3>
+	<p>A very important point: if you want everything gone over in lecture or in notes, then this is not the course for
+		you. More importantly, that's not how things work in real life.</p>
+
+	<h3>4. You will learn by doing.</h3>
+	<p>Each week, there will be at most three labs to hone your skills and to aim at the
+		crux of the matter for the week. Here's an analogy: you don't learn how to cook simply by just reading cookbooks
+		and watching YouTube videos. You learn by making, using your hands, and making mistakes.</p>
+
+	<h3>5. You will learn by asking questions.</h3>
+	<p>It is your responsibility to ask questions early and to ask for help...</p>
+
+	<h3>6. ...and I expect discussions online to be very active and civil.</h3>
+	<p>Share thoughts and respond to other people's questions. I will be online constantly, thus the idea of set office
+		hours almost becomes moot point. It is no secret that I respond very quickly unless I need to be away.</p>
+
+	<p>There is a very good post published by Northeastern University: "How To Be a Successful Online Learner." Link: <a
+			href="https://www.northeastern.edu/graduate/blog/tips-for-taking-online-classes/"
+			target="_blank">https://www.northeastern.edu/graduate/blog/tips-for-taking-online-classes/</a>.</p>
 
 </body>
+
 </html>
