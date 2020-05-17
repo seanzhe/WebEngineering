@@ -16,7 +16,7 @@
 
 <p>It is important to note that instructions for this lab may be deliberately vague at times.  You are expected to ask questions if you are confused or not sure about something as in the professional world.  There will also be opportunities to go beyond expectations especially for those who feel they have mastered the material.</p>
 
-<h2>Instructions</h2>
+<h2>Instructions and Requirements</h2>
 <p>The following table is a list of vehicles and their locations:</p>
 
 <table>
@@ -80,6 +80,16 @@
 <p>By default, a simple web server will open up on port 8000.  Go to <code>http://localhost:8000/</code> on your favorite web browser to test your work.</p>
 <p class="note">Do not serve your work via the <code>gh-pages</code> branch of your private GitHub repository.</p>
 
+<h2>Performance Optimations Requirements</h2>
+<p>For this lab, you will need to measure to performance of the web page.  Please DO NOT incorporate performance optimizations at first.  After you complete the requirements above and the page works, record page load times and file sizes using your web browser's developers tools.  Then, perform the following performance optimations:</p>
+<ol>
+<li>Minify CSS</li>
+<li>Move JavaScript files and code to the bottom of the HTML, before the closing body tag</li>
+<li>Load CSS first, head section</li>
+<li>Minify JavaScript code. NOTE: be sure to make a copy of your "readable" (a.k.a., developer version) JavaScript first!</li>
+</ol>
+<p>If page works with performance optimations, record page load times and file sizes using your web browser's developers tools.  Show the differences in <code>README</code>.</p>
+
 <h2>The <code>README</code> File</h2>
 <p>Each lab shall include a <code>README</code> file that describes the work. This description must:</p>
 <ol>
@@ -87,6 +97,7 @@
 <li>Identify anyone with whom you have collaborated or discussed the lab.</li>
 <li>Say approximately how many hours you have spent completing the lab.</li>
 <li>Be written in either text format (<code>README.txt</code>) or in Markdown (<code>README.md</code>).  Markdown is preferred.  No other formats will be accepted.  Please use all capital letters for <code>README</code></li>
+<li><strong>IMPORTANT:</strong> For this lab, show the impact of performance enhancements.  Provide a comparison of the performance of page with vs without optimizations.  At bare minimum, provide load times and file sizes.</li>
 </ol>
 <p>This <code>README.md</code> file must be directly in the folder of the lab.</p>
 
@@ -96,10 +107,11 @@
 <h2>Assessment</h2>
 <p>This lab is worth 10 points:</p>
 <ul>
-<li>(1 point) <code>README</code></li>
-<li>(2 points) The basics (proper repository folder name, 1 CSS file, map on entire page, separate file for JavaScript)</li>
+<li>(1.5 points) <code>README</code></li>
+<li>(1 point) The basics (proper repository folder name, 1 CSS file, map on entire page, separate file for JavaScript)</li>
 <li>(1 point) Map centered on South Station</li>
-<li>(6 points) All the vehicles are marked on the map with the icon image <img src="car.png" alt="Vehicle" /> used as marker</li>
+<li>(1.5 points) Perform all performance enhancements</li>
+<li>(5 points) All the vehicles are marked on the map with the icon image <img src="car.png" alt="Vehicle" /> used as marker</li>
 <li>(-3 points) Errors exist in JavaScript console.  That is, errors that are not Google Maps API related.  Warnings are acceptable.</li>
 </ul>
 
