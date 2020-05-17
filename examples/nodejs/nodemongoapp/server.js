@@ -33,7 +33,7 @@ app.post('/feedme', function(request, response) {
 				response.send(500);
 			}
 			else {
-				response.send('<html><head><title>Thanks!</title></head><body><h2>Thanks for your submission!</h2></body></html>');
+				response.send('<html lang="en"><head><title>Thanks!</title></head><body><h2>Thanks for your submission!</h2></body></html>');
 			}
 	    });
 	});
@@ -52,14 +52,14 @@ app.get('/', function(request, response) {
 			// All results of db.fooditems.find() will go into...
 			// ...`results`.  `results` will be an array (or list)
 			if (!err) {
-				indexPage += "<!DOCTYPE HTML><html><head><title>What Did You Feed Me?</title></head><body><h1>What Did You Feed Me?</h1>";
+				indexPage += "<!DOCTYPE HTML><html lang="en"><head><title>What Did You Feed Me?</title></head><body><h1>What Did You Feed Me?</h1>";
 				for (var count = 0; count < results.length; count++) {
 					indexPage += "<p>You fed me " + results[count].food + "!</p>";
 				}
 				indexPage += "</body></html>"
 				response.send(indexPage);
 			} else {
-				response.send('<!DOCTYPE HTML><html><head><title>What Did You Feed Me?</title></head><body><h1>Whoops, something went terribly wrong!</h1></body></html>');
+				response.send('<!DOCTYPE HTML><html lang="en"><head><title>What Did You Feed Me?</title></head><body><h1>Whoops, something went terribly wrong!</h1></body></html>');
 			}
 		});
 	});

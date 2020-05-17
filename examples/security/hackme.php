@@ -25,7 +25,7 @@
 		}
 	}
 ?>
-<html>
+<html lang="en">
 <head>
 <title>Hack Me Playground</title>
 </head>
