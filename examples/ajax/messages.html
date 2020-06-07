@@ -25,7 +25,7 @@
 					messagesSection = document.getElementById("messages");
 					messagesSection.innerHTML = "";
 					for (count = 0 ; count < tweets.length ; count++) {
-						messagesSection.innerHTML += "<p>" + tweets[count].content + " from " + tweets[count].username + "</p>";
+						messagesSection.innerHTML += "<p>" + tweets[count].text + " from " + tweets[count].screen_name + "</p>";
 					}
 				}
 			};
