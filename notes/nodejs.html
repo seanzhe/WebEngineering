@@ -53,7 +53,6 @@
 <ul>
 <li>Server-side software</li>
 <li>Uses JavaScript</li>
-<li>Uses Google's V8 JavaScript engine (<a href="https://code.google.com/p/v8/" target="_blank">https://code.google.com/p/v8/</a>)</li>
 <li>Event-driven and asynchronous I/O</li>
 <li>Lightweight</li>
 <li>For writing network applications</li>
@@ -70,7 +69,7 @@
 <li>The API documentation: <a href="http://expressjs.com/4x/api.html" target="_blank">http://expressjs.com/4x/api.html</a></li>
 </ul>
 
-<h3>Tutorial Using Node.js, Express, and Heroku (with code ready for MongoDB)</h3>
+<h3>Tutorial Using Node.js, Express, and Heroku (with code ready to connect to a Postgres database)</h3>
 <ol>
 <li>On your computer or virtual machine, run <code>mkdir node-example</code>.  This will create a new folder for your first server-side web application. <span class="note">DO NOT DO THIS IN YOUR PRIVATE GITHUB REPOSITORY!</span></li>
 <li>Run <code>cd node-example</code></li>
@@ -80,20 +79,18 @@
 var express = require('express');
 var app = express();
 
-// Mongo initialization, setting up a connection to a MongoDB  (on Heroku or localhost)
-/*var mongoUri = process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL ||
-  'mongodb://localhost/whereintheworld'; // comp120 is the name of the database we are using in MongoDB
-var mongo = require('mongodb');
-var db = mongo.Db.connect(mongoUri, function (error, databaseConnection) {
-  db = databaseConnection;
-});*/
+// Postgres initialization, setting up a connection to a Postgres database on Heroku
+/*const { Client } = require('pg');
+const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+    ssl: true,
+});
+client.connect();*/
 
 app.get('/', function (request, response) {
   response.set('Content-Type', 'text/html');
   response.send('&lt;p&gt;Hey, it works!&lt;/p&gt;');
 });
-
 
 // Oh joy! http://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of
 app.listen(process.env.PORT || 3000);
@@ -106,8 +103,7 @@ app.listen(process.env.PORT || 3000);
         "version": "0.0.1",
         "dependencies": {
                 "express": "latest",
-                "mongodb": "^2.2.33",
-                "body-parser": "latest"
+                "pg": "latest"
         }
 }
 </pre>

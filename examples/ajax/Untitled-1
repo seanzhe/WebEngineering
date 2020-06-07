@@ -1,0 +1,51 @@
+<h2>Week 5: Developing the Server Side</h2>
+<h4>Learning Objectives</h4>
+<hr />
+<p>Upon completion of this week, you will be able to:</p>
+<ol>
+<li>Identify what a web server needs to do.</li>
+<li>Create a web server using JavaScript and Node.js.</li>
+<li>Store lots of data persistently over a long time into a database --a Postgres database.</li>
+<li>Understand the limitations of the server-side.</li>
+</ol>
+<h4>Lecture Notes</h4>
+<hr />
+<ul>
+<li>What does a server need to do?
+<ul>
+<li>Video: Web Servers</li>
+<li><iframe id="kaltura_player" title="Kaltura Player" src="https://cdnapisec.kaltura.com/p/1813261/sp/181326100/embedIframeJs/uiconf_id/26203331/partner_id/1813261?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_mw3q3h9u&amp;flashvars%5BstreamerType%5D=auto&amp;flashvars%5BlocalizationCode%5D=en&amp;flashvars%5BleadWithHTML5%5D=true&amp;flashvars%5BsideBarContainer.plugin%5D=true&amp;flashvars%5BsideBarContainer.position%5D=left&amp;flashvars%5BsideBarContainer.clickToClose%5D=true&amp;flashvars%5Bchapters.plugin%5D=true&amp;flashvars%5Bchapters.layout%5D=vertical&amp;flashvars%5Bchapters.thumbnailRotator%5D=false&amp;flashvars%5BstreamSelector.plugin%5D=true&amp;flashvars%5BEmbedPlayer.SpinnerTarget%5D=videoHolder&amp;flashvars%5BdualScreen.plugin%5D=true&amp;&amp;wid=1_l4xnk6uk" width="400" height="285" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></li>
+</ul>
+</li>
+<li><a href="https://tuftsdev.github.io/WebEngineering/notes/nodejs.html" target="_blank" rel="noopener">Node.js: Developing the server side using JavaScript</a></li>
+<li>The Express Framework for Node.js</li>
+<li>Hosting your web application on Heroku
+<ul>
+<li>Video: <a href="https://asciinema.org/a/40322" target="_blank" rel="noopener">Deploying a web application to Heroku (Asciinema)</a></li>
+</ul>
+</li>
+<li>Video: Postgres via Heroku Postgres</a></li>
+</ul>
+</li>
+</ul>
+<h4>Required Readings</h4>
+<hr />
+<ol>
+<li><a href="https://ruslanspivak.com/lsbaws-part1/" target="_blank" rel="noopener">Let's Build A Web Server. Part 1 (ruslanspivak.com)</a></li>
+<li><a href="https://sqlzoo.net/" target="_blank" rel="noopener">SQL tutorial via SQLZOO</a></li>
+<li><a href="https://www.postgresql.org/docs/12/tutorial.html" target="_blank" rel="noopener">PostgreSQL Tutorial</a></li>
+</ol>
+<h4>Examples</h4>
+<hr />
+<ul>
+<li><a href="https://github.com/tuftsdev/WebEngineering/blob/gh-pages/examples/nodejs/server.js" target="_blank" rel="noopener">A web server written with Node.js (server-side JavaScript) and no frameworks...</a></li>
+<li><a href="https://github.com/tuftsdev/WebEngineering/tree/gh-pages/examples/nodejs/simpleexpress" target="_blank" rel="noopener">...the same web server written with Node.js + Express framework</a></li>
+<li><a href="https://github.com/tuftsdev/WebEngineering/tree/gh-pages/examples/nodejs/nodepsqlapp" target="_blank" rel="noopener">A web application written with Node.js + Express that sends data to a Postgres database</a></li>
+</ul>
+<h4>Labs</h4>
+<hr />
+<ul>
+<li><a href="https://github.com/tuftsdev/WebEngineering/tree/gh-pages/examples/nodejs/nodepsqlapp#exercises" target="_blank" rel="noopener">Exercises (not graded): Tinkering with Node.js + Express + Postgres web application</a></li>
+<li><a href="https://tuftsdev.github.io/WebEngineering/assignments/summer2020/lab-nodejsheroku.html" target="_blank" rel="noopener">Lab 11: Getting Started with the Server Side using Node.js and Heroku</a></li>
+<li><a href="https://tuftsdev.github.io/WebEngineering/assignments/summer2020/lab-rides3.html" target="_blank" rel="noopener">Lab 12: The Ride-Hailing Service, Part 3</a></li>
+</ul>
