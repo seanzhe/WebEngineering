@@ -1,9 +1,9 @@
 {
-	"name": "nodemongoapp",
+	"name": "nodepsqlapp",
 	"version": "0.0.1",
 	"dependencies": {
 		"express": "latest",
-		"mongodb": "^2.2.33",
+		"pg": "latest",
 		"validator": "latest"
 	}
 }
