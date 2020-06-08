@@ -37,6 +37,10 @@ Use `curl` to execute an HTTP POST request.  That is, send some data to the serv
 # Checking If Data Was Stored in Postgres table
 Go to `http://localhost:3000` on a web browser.  You should see your data entry "pizza" listed.
 
+# Trying This App Live!
+* https://protected-peak-86481.herokuapp.com/
+* Example data entry: `curl --data "food=Pineapples" https://protected-peak-86481.herokuapp.com//feedme` and see your food entry on https://protected-peak-86481.herokuapp.com/
+
 # Exercises
 1. Explain why if you run `curl --data "fooditem=steaks" http://localhost:3000/feedme`, the data will not be stored correctly in Postgres table.
 2. In reality, people generally do not send data to a server via command line tool such a `curl`, but using an HTML form.  Example: ordering something on Amazon.  Create an HTML form where one can type in a food item in a text box and upon clicking on a "Submit" button, the data is sent to server.
