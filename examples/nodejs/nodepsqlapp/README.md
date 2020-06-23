@@ -15,7 +15,7 @@ A Node.js + Express + Postgres web application.  There are two routes in this we
 3. `CREATE USER nodepsqlapp_user WITH password 'abc123';` (this assumes local development; not necessary to do on Heroku Postgres as a user will be created once you provision Heroku Postgres add-on)
 4. `CREATE DATABASE nodepsqlapp WITH OWNER=nodepsqlapp_user;` (this is not necessary if you are using Heroku Postgres; not necessary to do on Heroku Postgres as a database will be created once you provision Heroku Postgres add-on)
 5. `\q` to quit out of Postgres command line interface
-6. `psql nodepsqlapp -U nodepsqlapp_user`
+6. `psql nodepsqlapp -U nodepsqlapp_user` (or `heroku pg:psql` on Heroku with Postgres add-on)
 7. `CREATE TABLE fooditems (id SERIAL PRIMARY KEY, food TEXT NOT NULL, created_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP);` (absolutely necessary)
 8. `INSERT INTO fooditems (food) VALUES ('Pasta');` (insert sample data 1)
 9. `INSERT INTO fooditems (food) VALUES ('milk');` (insert sample data 2)
